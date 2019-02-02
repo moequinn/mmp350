@@ -1,15 +1,19 @@
-body{
-text-align: center;
+body {
+	background: black;
+	color: white;
+	font-family: helvetica;
+	font-size: 22px;
 }
 
-.container {
-    
+#container {
+	width: 800px;
+	margin: 0 auto;
+	
 }
+
+img { width: 100%; }
 
 .slide {
-    
-}
-
-img {
-    
+	border-bottom: 1px dashed white;
+	margin-top: 1em;
 }
