@@ -17,3 +17,7 @@ img { width: 100%; }
 	border-bottom: 1px dashed white;
 	margin-top: 1em;
 }
+
+footer {
+    text-align: center;
+}
