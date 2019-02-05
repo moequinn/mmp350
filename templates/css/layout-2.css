@@ -1,0 +1,12 @@
+/*
+    02-04-2019 Layout-2
+*/
+
+#container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+}
