@@ -13,10 +13,9 @@
     grid-gap: 1em;
     
     grid-template-areas: 
-        "header header header"
-        "post menu login"
-        "sign-up sign-up sign-up"
-        "posts blank blank"
+        "sign-up login header"
+        "posts post menu"
+        "posts post menu"
         ;   
 }
 
