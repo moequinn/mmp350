@@ -8,5 +8,37 @@
     margin-right: auto;
     
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 1em;
+    
+    grid-template-areas: 
+        "header login sign-up"
+        "menu blank blank"
+        "post posts posts"
+        ;   
+}
+
+#title {
+    grid-area: header;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#posts {
+    grid-area: main;
+}
+
+#post {
+    grid-area: post;
+}
+
+#login {
+    grid-area: login;
+}
+
+#sign-up {
+    grid-area: sign-up;
 }
