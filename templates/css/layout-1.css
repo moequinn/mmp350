@@ -8,7 +8,7 @@
     margin-right: auto;
     
     display: grid;
-    grid-template-columns: repeat(3, lfr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, max-content);
     grid-column-gap: 20px;
     grid-row-gap: 1em; 
