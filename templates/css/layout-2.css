@@ -12,10 +12,11 @@
     grid-template-rows: repeat(3, max-content);
     grid-gap: 1em;
     
-    grid-template-areas: 
+    grid-template-areas:
+        "menu menu menu"
         "header sign-up login"
-        "main post menu"
-        "main post menu"
+        "main post post"
+        "main post post"
         ;   
 }
 
