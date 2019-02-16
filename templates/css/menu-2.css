@@ -1,14 +1,15 @@
-/* menu flex menu-1.css */
+   /* menu flex box menu-2.css */
 #menu-list {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
 }
 
 #menu-list li {
-    flex-basis: 1em;
+	margin-left: 1em;
 }
+    
 
 #menu-list li {
     flex-basis: 2em;
@@ -20,7 +21,7 @@
 @media (max-width: 400px) {
 	#container {
 		width: 100%;
-        background-color: beige;
+        background-color: azure;
 		grid-template-columns: 1fr;
 		grid-template-areas: 
 			"menu"
@@ -32,9 +33,10 @@
 	}
 	
 	#menu-list {
-		justify-content: center;
-		flex-direction: column;
+		justify-content: flex-start;
+		flex-direction: column-reverse;
 		align-items: center;
+        background-color: lightblue;
 	}
 	
 	#menu-list li {
@@ -46,20 +48,19 @@
 @media (min-width: 401px) and (max-width: 800px) {
 	#container {
 		width: 100%;
-        background-color: aquamarine;
+        background-color: beige;
 		grid-template-areas: 
 			"menu menu menu"
-			"header sign-up login"
+			"header login sign-up"
 			"main main post";
 	}
 	
 	#menu-list {
-        background-color: azure;
 		justify-content: space-around;
+        background-color: lightblue;
 	}
 	
 	#menu-list li {
 		margin-left: 0;	
 	}
 }
-

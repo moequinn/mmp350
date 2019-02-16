@@ -1,4 +1,4 @@
-/* mobile responsive-2.css */
+/* mobile responsive-3.css */
 @media (max-width: 400px) {
 	#container {
 		width: 100%;
@@ -9,13 +9,13 @@
 			"post"
 			"main"
 			"login"
-			"sign-up";
+			"footer";
 	}
 	
 	#menu-list {
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+		align-items: baseline;
 	}
 	
 	#menu-list li {
@@ -28,9 +28,9 @@
 	#container {
 		width: 100%;
 		grid-template-areas: 
-			"menu menu menu"
-			"header sign-up login"
-			"main main post";
+			"header header post"
+			"main main main"
+			"footer login menu";
 	}
 	
 	#menu-list {

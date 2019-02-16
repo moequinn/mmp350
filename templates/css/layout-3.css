@@ -14,8 +14,8 @@
     
     grid-template-areas: 
         "header login sign-up"
-        "menu blank blank"
-        "post posts posts"
+        "main main menu"
+        "main main post"
         ;   
 }
 
