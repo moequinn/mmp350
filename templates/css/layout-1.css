@@ -9,36 +9,37 @@
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, max-content);
+    grid-template-rows: repeat(4, max-content);
     grid-column-gap: 20px;
     grid-row-gap: 1em; 
 }
 
-#title {
-    grid-column-start: 1;
-    grid-column-end: 2;
+#menu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
 }
 
-#post {
-    grid-column: 1 / span 3;
+#title {
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
 #login {
     grid-column: 3/ span 1;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 #signin {
     grid-column: 3 / span 1;
-    grid-row: 3
-}
-
-#menu {
-    grid-column: 3 / span 1;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #post {
-    grid-column: 1 / span 1;
-    grid-row: 2;
+    grid-column: 3 / span 3;
+    grid-row: 4;
+}
+
+#posts {
+    grid-column: 1 / span 3;
+    grid-row: 3;
 }

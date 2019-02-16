@@ -9,7 +9,7 @@
 			"post"
 			"main"
 			"login"
-			"footer";
+			"sign-up";
 	}
 	
 	#menu-list {
@@ -28,9 +28,9 @@
 	#container {
 		width: 100%;
 		grid-template-areas: 
-			"header header post"
-			"main main main"
-			"footer login menu";
+			"menu menu header"
+			"main post sign-up"
+			"main post login";
 	}
 	
 	#menu-list {
