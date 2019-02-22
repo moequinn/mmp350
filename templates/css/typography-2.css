@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto:400,700,900');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+
+* { box-sizing: border-box; }
+
+body {
+	font-size: 18px;
+	line-height: 1.25;
+	background-color: #D1D7D3;
+}
+
+
+#title, #login *, #sign-up *, #menu *, #post * {
+	font-family: 'Roboto', sans-serif;
+}
+
+#posts {
+    font-family: 'Lato', sans-serif;
+}
+
+#title h1 {
+	margin: 0;
+	color: #5EA9FF;
+	text-shadow: 2px 2px 0 black;
+}
+
+#login *, #sign-up * {
+	font-size: 1rem;
+}
+
+#menu a {
+	color: #4A79EE;
+	padding: 0.1em;
+	font-size: 1.25em;
+	transition: background-color 300ms ease-in;
+}
+
+#menu a:hover {
+	background-color:  #FFFFFF;
+}
+
+
+#write-post {
+	font-size: 1.5rem;
+	width: 100%;
+	padding: 0.25em;
+	resize: none;
+}
+
+#submit-post {
+	font-size: 1.5rem;
+	width: 100%;
+	color: white;
+	background-color: #5EA9FF;
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+}
+
+.post {
+	margin: 1em 0;
+}
+
+.post-text {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.post-info {
+	color: #457BBA;
+}
+
+.author {
+	font-weight: bold;
+}
+
+.date {
+	color: #2653EE;
+}

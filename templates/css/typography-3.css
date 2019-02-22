@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,700,900');
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+* { box-sizing: border-box; }
+
+body {
+	font-size: 18px;
+	line-height: 1.25;
+	background-color: #B8D4A4;
+}
+
+
+#title, #login *, #sign-up *, #menu *, #post * {
+	font-family: 'Raleway', sans-serif;
+}
+
+#posts {
+    font-family: 'Oswald', sans-serif;
+}
+
+#title h1 {
+	margin: 0;
+	color: #495441;
+	text-shadow: 2px 2px 0 white;
+}
+
+#login *, #sign-up * {
+	font-size: 1rem;
+}
+
+#menu a {
+	color: #809472;
+	padding: 0.1em;
+	font-size: 1.25em;
+	transition: background-color 300ms ease-in;
+}
+
+#menu a:hover {
+	background-color:  #FFFFFF;
+}
+
+
+#write-post {
+	font-size: 1.5rem;
+	width: 100%;
+	padding: 0.25em;
+	resize: none;
+}
+
+#submit-post {
+	font-size: 1.5rem;
+	width: 100%;
+	color: white;
+	background-color: #495441;
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+}
+
+.post {
+	margin: 1em 0;
+}
+
+.post-text {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.post-info {
+	color: #305429;
+}
+
+.author {
+	font-weight: bold;
+}
+
+.date {
+	color: #809472;
+}

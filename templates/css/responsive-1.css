@@ -1,6 +1,7 @@
 /* mobile responsive-1.css */
 @media (max-width: 400px) {
     #container {
+        width: 100%;
         grid-template-columns: 1fr;
     }
     #title {
@@ -29,8 +30,23 @@
     }
 }
 
+/* tablet */
 @media (min-width: 401px) and (max-width: 800px) {
-    #container {
-        width: 100%;
+	#container {
+		width: 100%;
+		grid-template-areas: 
+			"menu menu header"
+			"main post sign-up"
+			"main post login";
+	}
+	
+	#menu-list {
+		justify-content: space-between;
+	}
+	
+	#menu-list li {
+		margin-left: 0;	
+	}
 }
-    
+
+
