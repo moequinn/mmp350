@@ -3,10 +3,14 @@
 	padding: 0;
 	list-style: none;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
+	align-items: center;
+	
 }
 
 #menu-list li {
-	margin-left: 1em;
+	/*margin-left: 1em;*/
+	flex: 1;
+	text-align: center;
 }
     
