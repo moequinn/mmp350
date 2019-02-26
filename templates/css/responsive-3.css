@@ -23,10 +23,38 @@
 	}
 }
 
+/* mobile */
+@media (max-width: 400px) {
+	#container {
+		width: 100%;
+        background-color: lightcoral;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"menu"
+			"header"
+			"post"
+			"main"
+			"login"
+			"sign-up";
+	}
+	
+	#menu-list {
+		justify-content: flex-end;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#menu-list li {
+		margin-left: 0;
+        text-align: left;
+	}
+}
+
 /* tablet */
 @media (min-width: 401px) and (max-width: 800px) {
 	#container {
 		width: 100%;
+        background-color: lightgreen;
 		grid-template-areas: 
 			"menu menu header"
 			"main post sign-up"
@@ -35,6 +63,7 @@
 	
 	#menu-list {
 		justify-content: space-around;
+        background-color: lemonchiffon;
 	}
 	
 	#menu-list li {

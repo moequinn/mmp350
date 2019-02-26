@@ -1,4 +1,4 @@
-   /* menu flex box menu-2.css */
+/* menu flex box menu-2.css */
 #menu-list {
 	padding: 0;
 	list-style: none;
@@ -13,54 +13,4 @@
 
 #menu-list li {
     flex-basis: 2em;
-}
-
-
-
-/* mobile */
-@media (max-width: 400px) {
-	#container {
-		width: 100%;
-        background-color: azure;
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-			"menu"
-			"header"
-			"post"
-			"main"
-			"login"
-			"sign-up";
-	}
-	
-	#menu-list {
-		justify-content: flex-start;
-		flex-direction: column-reverse;
-		align-items: center;
-        background-color: lightblue;
-	}
-	
-	#menu-list li {
-		margin-left: 0;
-	}
-}
-
-/* tablet */
-@media (min-width: 401px) and (max-width: 800px) {
-	#container {
-		width: 100%;
-        background-color: beige;
-		grid-template-areas: 
-			"menu menu menu"
-			"header login sign-up"
-			"main main post";
-	}
-	
-	#menu-list {
-		justify-content: space-around;
-        background-color: lightblue;
-	}
-	
-	#menu-list li {
-		margin-left: 0;	
-	}
 }
