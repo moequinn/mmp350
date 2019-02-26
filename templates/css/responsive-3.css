@@ -14,6 +14,7 @@
     }
     #title {
         grid-row: 1;
+        text-align: center;
     }
     #login {
         grid-row: 5;
@@ -31,23 +32,39 @@
         grid-row: 3;
     }
 }
+
 /* tablet */
 @media (min-width: 401px) and (max-width: 800px) {
 	#container {
-		width: 100%;
-        background-color: #B8D4A4;
-		grid-template-areas: 
-			"menu menu header"
-			"main post sign-up"
-			"main post login";
+		width: 100%;	
+	}
+    
+    #title {
+        grid-row: 1;
+    }
+	
+	#post {
+		grid-column: 3;
+		grid-row: 1;
 	}
 	
-	#menu-list {
-		justify-content: space-around;
-        background-color: #B8D4A4;
+	#posts {
+		grid-column: 1 / span 3;
+		grid-row: 2;
 	}
 	
-	#menu-list li {
-		margin-left: 0;	
+	#login, #sign-up, #menu {
+		grid-row: 3;
 	}
+	
+	#login { 
+		grid-column: 1;
+	}
+	#sign-up {
+		grid-column: 2;
+	}
+	#menu {
+		grid-column: 3;
+	}
+	
 }

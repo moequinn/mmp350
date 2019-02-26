@@ -6,21 +6,22 @@
     }
     #title {
         grid-column: 1;
+        text-align: center;
     }
     #login, #sign-up, #menu, #post, #posts {
         grid-column: 1;
     }
     #title {
-        grid-row: 4;
+        grid-row: 1;
     }
     #login {
         grid-row: 2;
     }
     #sign-up {
-        grid-row: 1;
+        grid-row: 3;
     }
     #menu {
-        grid-row: 3;
+        grid-row: 4;
     }
     #post {
         grid-row: 5;
@@ -35,9 +36,9 @@
 	#container {
 		width: 100%;
 		grid-template-areas: 
-			"menu menu header"
-			"main post sign-up"
-			"main post login";
+			"header menu menu"
+			"main main main"
+			"post sign-up login";
 	}
 	
 	#menu-list {

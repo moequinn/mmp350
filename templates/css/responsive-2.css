@@ -35,9 +35,9 @@
 	#container {
 		width: 100%;
 		grid-template-areas: 
-			"menu menu menu"
-			"header post login"
-			"main main sign-up";
+			"header sign-up login"
+            "main main main"
+            "menu menu post";
 	}
 	
 	#menu-list {
