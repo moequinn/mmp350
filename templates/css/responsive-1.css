@@ -11,16 +11,16 @@
         grid-column: 1;
     }
     #title {
-        grid-row: 1;
+        grid-row: 4;
     }
     #login {
         grid-row: 2;
     }
     #sign-up {
-        grid-row: 3;
+        grid-row: 1;
     }
     #menu {
-        grid-row: 4;
+        grid-row: 3;
     }
     #post {
         grid-row: 5;

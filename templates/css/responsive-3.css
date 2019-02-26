@@ -1,60 +1,41 @@
 /* mobile responsive-3.css */
-@media (max-width: 400px) {
-	#container {
-		width: 100%;
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-			"menu"
-			"header"
-			"post"
-			"main"
-			"login"
-			"sign-up";
-	}
-	
-	#menu-list {
-		justify-content: flex-end;
-		flex-direction: row-reverse;
-		align-items: baseline;
-	}
-	
-	#menu-list li {
-		margin-left: 0;
-	}
-}
 
 /* mobile */
 @media (max-width: 400px) {
-	#container {
-		width: 100%;
-        background-color: lightcoral;
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-			"menu"
-			"header"
-			"post"
-			"main"
-			"login"
-			"sign-up";
-	}
-	
-	#menu-list {
-		justify-content: flex-end;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	#menu-list li {
-		margin-left: 0;
-        text-align: left;
-	}
+    #container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    #title {
+        grid-column: 1;
+    }
+    #login, #sign-up, #menu, #post, #posts {
+        grid-column: 1;
+    }
+    #title {
+        grid-row: 1;
+    }
+    #login {
+        grid-row: 5;
+    }
+    #sign-up {
+        grid-row: 6;
+    }
+    #menu {
+        grid-row: 2;
+    }
+    #post {
+        grid-row: 4;
+    }
+    #posts {
+        grid-row: 3;
+    }
 }
-
 /* tablet */
 @media (min-width: 401px) and (max-width: 800px) {
 	#container {
 		width: 100%;
-        background-color: lightgreen;
+        background-color: #B8D4A4;
 		grid-template-areas: 
 			"menu menu header"
 			"main post sign-up"
@@ -63,7 +44,7 @@
 	
 	#menu-list {
 		justify-content: space-around;
-        background-color: lemonchiffon;
+        background-color: #B8D4A4;
 	}
 	
 	#menu-list li {

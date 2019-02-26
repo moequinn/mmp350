@@ -10,7 +10,7 @@ font-family: 'Merriweather', serif;
 body {
 	font-size: 18px;
 	line-height: 1.25;
-	background-color: #FFE4B7;
+	background-color: #B8D4A4;
 }
 
 
@@ -81,3 +81,47 @@ body {
 .date {
 	color: #D4825A;
 }
+
+
+/* adaptive */
+
+/* mobile */
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    
+    .post-text {
+        font-size: 1.25em;
+    }
+}
+
+/* tablet */
+
+@media (max-width: 401px) and (min-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/* viewport sizes */
+
+#title h1 {
+    font-size: 5vw;
+}
+.post-text {
+    font-size: 3vmax;
+}
+
+/* mobile */
+
+@media (max-width: 400px) {
+    
+}
+
+/* tablet */
+
+
