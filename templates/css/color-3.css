@@ -1,14 +1,20 @@
 /* color scheme 3*/
 
 :root {
-    --main-color: #FF882E;   /* light orange */ 
-    --accent-color: #FFB57D; /* orange */ 
-    --text-color: white;
-    --background-color: #C76A24;
+    --main-hue: 250; /* blue */
+	--main-color: hsl(var(--main-hue), 90%, 10%);
+    
+    --accent-one-hue: calc(var(--main-hue) - 120);
+    --accent-one: hsl(var(--accent-one-hue), 40%, 70%);
+    
+    --accent-two-hue: calc(var(--main-hue) + 120);
+    --accent-two: hsl(var(--accent-two-hue), 50%, 50%);
+    
+    --text-color: hsl(var(--accent-two-hue), 10%, 100%);
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--accent-one);
 }
 
 

@@ -1,14 +1,20 @@
-/* color scheme 2*/
+/* color scheme 2 */
 
 :root {
-	--main-color: #E80012; /* red */
-	--accent-color: #FF7D87; /* light red */
-	--text-color: white;
-    --background-color: #FF9999;
+	--main-hue: 250; /* blue */
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+    
+    --accent-one-hue: calc(var(--main-hue) - 120);
+    --accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+    
+    --accent-two-hue: calc(var(--main-hue) + 120);
+    --accent-two: hsl(var(--accent-two-hue), 50%, 50%);
+    
+    --text-color: hsl(var(--accent-two-hue), 10%, 90%);
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: hsl(var(--main-hue), 10%, 90%);
 }
 
 #title {
@@ -59,6 +65,7 @@ input::placeholder {
 
 .post-text {
 	border-bottom: 2px solid var(--main-color);
+    color: hsl(240, 50%, 50%);
 }
 
 .post-info {
