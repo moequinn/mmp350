@@ -1,0 +1,50 @@
+/* mobile responsive-2.css */
+
+/* mobile */
+@media (max-width: 400px) {
+	#container {
+		width: 100%;
+        background-color: #B8D4A4;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"menu"
+			"header"
+			"post"
+			"main"
+			"login"
+			"sign-up";
+	}
+	
+	#menu-list {
+        flex-direction: column;
+        flex-direction: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+        align-content: center;
+	}
+	
+	#menu-list li {
+		margin-left: 0;
+        text-align: left;
+	}
+}
+
+
+/* tablet */
+@media (min-width: 401px) and (max-width: 800px) {
+	#container {
+		width: 100%;
+		grid-template-areas: 
+			"header sign-up login"
+            "main main main"
+            "menu menu post";
+	}
+	
+	#menu-list {
+		justify-content: space-around;
+	}
+	
+	#menu-list li {
+		margin-left: 0;	
+	}
+}

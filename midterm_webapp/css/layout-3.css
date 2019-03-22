@@ -1,0 +1,44 @@
+/*
+    02-04-2019 Layout-3
+*/
+
+#container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 1em;
+    
+    grid-template-areas: 
+        "header login sign-up"
+        "main main menu"
+        "main main post"
+        ;   
+}
+
+#title {
+    grid-area: header;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#posts {
+    grid-area: main;
+}
+
+#post {
+    grid-area: post;
+}
+
+#login {
+    grid-area: login;
+}
+
+#sign-up {
+    grid-area: sign-up;
+}

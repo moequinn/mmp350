@@ -1,0 +1,12 @@
+ /* menu flex box menu-3.css */
+#menu-list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+#menu-list li {
+	margin-left: 1em;
+    flex-basis: 2em;
+}

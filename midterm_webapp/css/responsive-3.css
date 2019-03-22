@@ -1,0 +1,70 @@
+/* mobile responsive-3.css */
+
+/* mobile */
+@media (max-width: 400px) {
+    #container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    #title {
+        grid-column: 1;
+    }
+    #login, #sign-up, #menu, #post, #posts {
+        grid-column: 1;
+    }
+    #title {
+        grid-row: 1;
+        text-align: center;
+    }
+    #login {
+        grid-row: 5;
+    }
+    #sign-up {
+        grid-row: 6;
+    }
+    #menu {
+        grid-row: 2;
+    }
+    #post {
+        grid-row: 4;
+    }
+    #posts {
+        grid-row: 3;
+    }
+}
+
+/* tablet */
+@media (min-width: 401px) and (max-width: 800px) {
+	#container {
+		width: 100%;	
+	}
+    
+    #title {
+        grid-row: 1;
+    }
+	
+	#post {
+		grid-column: 1 / span 3;
+		grid-row: 4;
+	}
+	
+	#posts {
+		grid-column: 1 / span 3;
+		grid-row: 2;
+	}
+	
+	#login, #sign-up, #menu {
+		grid-row: 3;
+	}
+	
+	#login { 
+		grid-column: 1;
+	}
+	#sign-up {
+		grid-column: 2;
+	}
+	#menu {
+		grid-column: 3;
+	}
+	
+}

@@ -1,0 +1,12 @@
+/* menu flex menu-1.css */
+#menu-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#menu-list li {
+    flex-basis: 1em;
+}
+
