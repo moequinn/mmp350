@@ -10,7 +10,7 @@
         text-align: center;
     }
     
-    #login, #sign-up, #menu, #post, #posts {
+    #login, #sign-up, #menu, #posts1, #posts2, #posts3, #posts4{
         grid-column: 1;
     }
     
@@ -22,28 +22,28 @@
         grid-row: 2;
     }
     
+    #posts1 {
+        grid-row: 3;
+    }
+    
+    #posts2 {
+        grid-row: 6;
+    }
+    
+    #posts3 {
+        grid-row: 5;
+    }
+    
+    #post4 {
+        grid-row: 4;
+    }
+    
     #login {
         grid-row: 7;
     }
     
     #sign-up {
         grid-row: 8;
-    }
-    
-    #posts1 {
-        grid-row: 3;
-    }
-    
-    #posts2 {
-        grid-row: 4;
-    }
-    
-    #posts3 {
-        grid-row: 6;
-    }
-    
-    #post4 {
-        grid-row: 5;
     }
     
 }
@@ -56,8 +56,8 @@
 		grid-template-areas: 
 			"header menu menu menu"
 			"blank blank sign-up login"
-			"post1 post1 post2 post2"
-            "post3 post3 post4 post4"
+			"post1 post1 post4 post4"
+            "post3 post3 post2 post2"
             ;
 	}
 	
