@@ -8,15 +8,10 @@
     margin-right: auto;
     
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, max-content);
     grid-column-gap: 20px;
     grid-row-gap: 1em; 
-}
-
-#menu {
-    grid-column: 1 / span 3;
-    grid-row: 1;
 }
 
 #title {
@@ -24,22 +19,27 @@
     grid-column-end: 1;
 }
 
+#menu {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+}
+
 #login {
-    grid-column: 3;
+    grid-column: 3 / span 4;
     grid-row: 2;
 }
 
-#signin {
-    grid-column: 3;
+#sign-up {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+#posts {
+    grid-column: 1 / span 4;
     grid-row: 3;
 }
 
 #post {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
     grid-row: 4;
-}
-
-#posts {
-    grid-column: 1 / span 3;
-    grid-row: 3;
 }
