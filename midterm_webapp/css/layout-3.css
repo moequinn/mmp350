@@ -15,8 +15,8 @@
     grid-template-areas:
         "header menu menu menu"
         "blank blank sign-up login"
-        "posts1 posts1 posts4 posts4"
-        "posts3 posts3 posts2 posts2"
+        "posts1 posts1 posts2 posts2"
+        "posts3 posts3 posts4 posts4"
         ;   
 }
 
