@@ -1,53 +1,21 @@
 /* mobile responsive-1.css */
 @media (max-width: 400px) {
     #container {
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-    
+		width: 100%;
+		grid-template-areas: 
+			"header" 
+            "menu"
+			"sign-up" 
+            "login"
+			"posts1"
+            "posts2"
+            "posts3" 
+            "posts4"
+            ;
+	}
     #title {
-        grid-column: 1;
         text-align: center;
     }
-    
-    #login, #sign-up, #menu, #posts1, #posts2, #posts3, #posts4{
-        grid-column: 1;
-    }
-    
-    #title {
-        grid-row: 1;
-    }
-    
-    #menu {
-        grid-row: 2;
-    }
-    
-    #posts1 {
-        grid-row: 3;
-    }
-    
-    #posts2 {
-        grid-row: 6;
-    }
-    
-    #posts3 {
-        grid-row: 5;
-    }
-    
-    #post4 {
-        grid-row: 4;
-    }
-    
-    #login {
-        grid-row: 7;
-    }
-    
-    #sign-up {
-        grid-row: 8;
-    }
-    
-}
-
 
 /* tablet */
 @media (min-width: 401px) and (max-width: 800px) {
@@ -56,8 +24,8 @@
 		grid-template-areas: 
 			"header menu menu menu"
 			"blank blank sign-up login"
-			"post1 post1 post4 post4"
-            "post3 post3 post2 post2"
+			"posts1 posts1 posts2 posts2"
+            "posts3 posts3 posts4 posts4"
             ;
 	}
 	

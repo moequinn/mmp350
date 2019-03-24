@@ -9,14 +9,14 @@
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, max-content);
+    grid-template-rows: repeat(4, max-content);
     grid-gap: 1em;
     
     grid-template-areas:
         "header menu menu menu"
-        "blank blank login sign-up"
-        "post1 post1 post2 post2"
-        "post3 post3 post4 post4"
+        "blank blank sign-up login"
+        "posts1 posts1 posts4 posts4"
+        "posts3 posts3 posts2 posts2"
         ;   
 }
 
@@ -33,21 +33,21 @@
 }
 
 #posts1 {
-    grid-area: post1;
+    grid-area: posts1;
 /*    background-color: red;*/
 }
 
 #posts2 {
-    grid-area: post2;
+    grid-area: posts2;
 /*    background-color: blue;*/
 }
 #posts3 {
-    grid-area: post3;
+    grid-area: posts3;
 /*    background-color: green;*/
 }
 
 #posts4 {
-    grid-area: post4;
+    grid-area: posts4;
 /*    background-color: yellow;*/
 }
 
