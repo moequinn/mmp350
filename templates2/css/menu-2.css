@@ -1,0 +1,16 @@
+/* menu flex box menu-2.css */
+#menu-list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+#menu-list li {
+	/*margin-left: 1em;*/
+	flex: 1;
+	text-align: center;
+}
+    
