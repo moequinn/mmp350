@@ -12,3 +12,17 @@ function updateUser(snapshot) {
 	console.log(user);
 	profileDisplayName.textContent = user.displayName;
 }
+
+/* update data */
+const editButton = document.getElementById('edit');
+const editProfile = document.getElementById('edit-profile');
+
+editButton.onclick = function() {
+    editProfile.style.display = 'block';
+};
+
+profilEditButton.onclick = updateProfile;
+
+function upadteProfile() {
+    ref.update({ display })
+}
