@@ -1,0 +1,45 @@
+/*
+    02-04-2019 Layout-1
+*/
+
+#container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    grid-column-gap: 20px;
+    grid-row-gap: 1em; 
+}
+
+#menu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+#title {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#login {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#signin {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#post {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}
+
+#posts {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}

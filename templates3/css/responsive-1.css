@@ -1,0 +1,53 @@
+/* mobile responsive-1.css */
+@media (max-width: 400px) {
+    #container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    #title {
+        grid-column: 1;
+        text-align: center;
+    }
+    #login, #sign-up, #menu, #post, #posts {
+        grid-column: 1;
+    }
+    #title {
+        grid-row: 1;
+    }
+    #login {
+        grid-row: 2;
+    }
+    #sign-up {
+        grid-row: 3;
+    }
+    #menu {
+        grid-row: 4;
+    }
+    #post {
+        grid-row: 5;
+    }
+    #posts {
+        grid-row: 6;
+    }
+}
+
+/* tablet */
+@media (min-width: 401px) and (max-width: 800px) {
+	#container {
+		width: 100%;
+		grid-template-areas: 
+			"header menu menu"
+			"main main main"
+			"post sign-up login";
+	}
+	
+	#menu-list {
+		justify-content: space-between;
+	}
+	
+	#menu-list li {
+		margin-left: 0;	
+	}
+}
+
+

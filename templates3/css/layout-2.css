@@ -1,0 +1,73 @@
+#container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, max-content);
+	grid-gap: 1em;
+	
+	grid-template-areas:
+		"menu menu menu"
+		"header sign-up login"
+		"post post post"
+		"main main main";
+}
+
+#title {
+	grid-area: header;
+}
+
+#menu {
+	grid-area: menu;
+}
+
+#posts {
+	grid-area: main;
+}
+
+#post {
+	grid-area: post;
+}
+
+#login {
+	grid-area: login;
+}
+
+#sign-up {
+	grid-area: sign-up;
+}
+
+#profile {
+	grid-area: main;
+}
+
+#user-info {
+	display: none;
+	grid-area: login;
+}
+
+#edit, #edit-profile {
+	display: none;
+}
+
+.logged-in #edit {
+	display: block;
+}
+
+.logged-in #user-info {
+	display: block;
+}
+
+.logged-in #sign-up,
+.logged-in #login {
+	display: none;
+}
+
+
+
+
+
+
+
