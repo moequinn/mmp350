@@ -28,7 +28,7 @@ body {
 }
 
 #login input, #sign-up input {
-	background: var(--main-color);
+/*	background: var(--main-color);*/
 	border: none;
 	padding: 0.25em;
 }
