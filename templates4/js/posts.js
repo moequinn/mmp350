@@ -38,14 +38,3 @@ function createPost(post) {
     /* reverse chronological order */
     postsDiv.insertBefore(postDiv, postsDiv.firstElementChild);
 }
-
-
-===
-const postText = document.getElementById('write-post');
-const submitPost = document.getElementById('submit-post');
-
-function addPost() {
-    console.log('add a post');
-}
-
-submitpost.addEventListener('keydown', function(event));

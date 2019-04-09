@@ -1,0 +1,82 @@
+/* color scheme 2 */
+
+:root {
+	--main-hue: 250; /* blue */
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+    
+    --accent-one-hue: calc(var(--main-hue) - 120);
+    --accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+    
+    --accent-two-hue: calc(var(--main-hue) + 120);
+    --accent-two: hsl(var(--accent-two-hue), 10%, 20%);
+    
+    --text-color: hsl(var(--accent-two-hue), 10%, 90%);
+}
+
+body {
+    background-color: hsl(var(--main-hue), 10%, 90%);
+}
+
+#title {
+	color: var(--main-color);
+	text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+#title h1 {
+	color: var(--main-color);
+	text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+#login input, #sign-up input {
+/*	background: var(--main-color);*/
+	border: none;
+	padding: 0.25em;
+}
+input::placeholder {
+	color: var(--text-color);
+}
+	
+#login button, #sign-up button {
+	background: var(--main-color);
+	color: var(--text-color);
+	padding: 0.25em;
+}
+	
+#menu a {
+	color: var(--main-color);
+	transition: color 300ms ease-in;
+}
+	
+#menu a:hover {
+	color: var(--accent-color);
+}
+	
+#write-post {
+	border: 1px solid var(--main-color);
+}
+#write-post::placeholder {
+	color: var(--main-color);
+}
+
+#submit-post {
+	background: var(--main-color);
+	color: var(--text-color);
+}
+
+.post-text {
+	border-bottom: 2px solid var(--main-color);
+    color: hsl(240, 50%, 50%);
+}
+
+.post-info {
+    color: var(--main-color);
+}
+	
+.post .author {
+	color: var(--accent-two);
+}
+	
+.post .date {
+	
+    color: var(--accent-two);
+}
