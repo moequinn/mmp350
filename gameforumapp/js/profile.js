@@ -3,6 +3,14 @@ const uid = location.search.split('=')[1];
 const db = firebase.database();
 const ref = db.ref('users').child(uid);
 
+firebase.auth().onAuthStateChanged(function(user) {
+	if (user.uid == uid) {
+		document.body.classList.add('is-user');
+	} else {
+		document.body.classList.remove('is-user');
+	}
+});
+
 // firebase event, any change to database
 ref.on('value', updateUser);
 
@@ -34,7 +42,11 @@ profileEditButton.onclick = updateProfile;
 function updateProfile() {
 	const username = profileNameInput.value;
 	if (username.length > 2) {
-		ref.update({ displayName: username });
+		ref.update({ 
+            displayName: username,
+            bio: 
+        });
+		firebase.auth().currentUser.updateProfile({ displayName: username });
 		editProfile.style.display = 'none';
 		profileNameInput.classList.remove('error');
 	} else {
@@ -79,6 +91,15 @@ function displayPhoto(url) {
 	const addPhoto = get('add-photo');
 	addPhoto.style.display = 'none';
 }
+
+
+
+
+
+
+
+
+
 
 
 

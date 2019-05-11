@@ -1,0 +1,33 @@
+.post {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	grid-template-areas: 
+		"photo post-text"
+		"photo post-info"
+		"likes likes";
+	grid-gap: 1em;
+}
+
+.photo {
+	grid-area: photo;
+}
+
+.photo img {
+	width: 100%;
+}
+
+.post-text {
+	grid-area: post-text;
+}
+
+.post-info {
+	grid-area: post-info;
+}
+
+.likes {
+	grid-area: likes;
+}
+
+.like-button {
+	border: none;
+}

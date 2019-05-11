@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<title>Search</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+    	apiKey: "AIzaSyB4Hx98RLALZMdIlxsg0xtLVlGTlMJvMrI",
+                authDomain: "mmp-350-app-1eb97.firebaseapp.com",
+                databaseURL: "https://mmp-350-app-1eb97.firebaseio.com",
+                projectId: "mmp-350-app-1eb97",
+                storageBucket: "mmp-350-app-1eb97.appspot.com",
+                messagingSenderId: "557382331122"
+  	};
+  	firebase.initializeApp(config);
+	</script>
+</head>
+<body>
+	<div id="container">
+		<!-- title / logo -->
+		<div id="title">
+			<h1>Game Forum App</h1>
+		</div>
+		
+		<!-- user info -->
+		<div id="user-info">
+			<div id="display-name"></div>
+			<button id="logout">Log Out</button>
+		</div>
+		
+		<!-- login -->
+		<div id="login">
+			<input type="text" id="login-email" placeholder="Email">
+			<input type="password" id="login-password" placeholder="Password">
+			<button id="submit-login">Login</button>
+		</div>
+		
+		<!-- sign up -->
+		<div id="sign-up">
+			<input type="text" id="sign-up-username" placeholder="Username">
+			<input type="email" id="sign-up-email" placeholder="Email">
+			<input type="password" id="sign-up-password" placeholder="Password">
+			<select id="borough">
+				<option>Bronx</option>
+				<option>Brooklyn</option>
+				<option>Manhattan</option>
+				<option>Queens</option>
+				<option>Staten Island</option>
+			</select>
+			<button id="submit-sign-up">Sign Up</button>
+			<!--<p id="signup-response"></p>-->
+		</div>
+
+		<!-- navigation / menu -->
+		<div id="menu">
+			<ul id="menu-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a id="profile-link" href="">Profile</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Users</a></li>
+			</ul>
+		</div>
+		
+		
+		<!-- search -->
+		<div id="search">
+			<input id="query">
+			<button id="submit-query">Search</button>
+		</div>
+	
+		<!-- feed/posts/users content -->
+		<div id="posts"></div>
+	</div>
+	<script src="js/auth.js"></script>
+	<script src="js/create-post.js"></script>
+	<script src="js/search.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

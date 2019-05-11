@@ -2,7 +2,7 @@ const postText = document.getElementById('write-post');
 const submitPost = document.getElementById('submit-post');
 
 const db = firebase.database();
-const ref = db.ref('posts');
+const ref = db.ref('posts').child(topic);
 
 /* add a new post to the database */
 function addPost() {
@@ -27,3 +27,7 @@ postText.addEventListener('keydown', function(event) {
 		addPost();	
 	}
 });
+
+
+
+

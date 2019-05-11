@@ -1,0 +1,51 @@
+#container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, max-content);
+	grid-column-gap: 20px;
+	grid-row-gap: 1em;
+}
+
+#title {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#login {
+	grid-column: 3 / span 1;
+	grid-row: 1;
+}
+
+#sign-up {
+	grid-column: 3 / span 1;
+	grid-row: 3;
+}
+
+#menu {
+	grid-column: 3 / span 1;
+	grid-row: 2;
+}
+
+#post {
+	grid-column: 1 / span 2;
+	grid-row: 2;
+}
+
+#posts {
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
+
+
+
+
+
+
+
+
+
+

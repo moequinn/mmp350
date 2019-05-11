@@ -1,0 +1,30 @@
+/* 
+	color scheme 3
+	analagous color scheme
+*/
+:root {
+	--main-hue: 310;
+	--offset: 50;
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+		
+	--accent-one-hue: calc(var(--main-hue) - var(--offset));
+	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+		
+	--accent-two-hue: calc(var(--main-hue) + var(--offset));
+	--accent-two: hsl(var(--accent-two-hue), 50%, 50%);
+}
+
+#title {
+	color: var(--main-color);
+}
+	
+.post {
+	color: var(--main-color);
+	border: 2px solid var(--accent-two);
+	padding: 1em;
+}
+	
+.author, .date {
+	color: var(--accent-one);
+}
+	

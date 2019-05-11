@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Caudex:400,400i,700|Josefin+Slab:300,400,700');
+
+/* font-family: 'Josefin Slab', serif; */
+/* font-family: 'Caudex', serif; */
+
+
+body {
+	font-size: 18px;
+	line-height: 1.25;
+	/*background-color: darkgray;*/
+}
+
+
+#title, #login *, #sign-up *, #menu *, #post * {
+	font-family: 'Josefin Slab', serif;
+}
+
+#posts, button, input {
+	font-family: 'Caudex', serif;
+}
+
+#title h1 {
+	margin: 0;
+	/*color: #f277f0;*/
+	
+}
+
+#login *, #sign-up * {
+	font-size: 1rem;
+}
+
+#menu a {
+	/*color: #05ea99;*/
+	padding: 0.1em;
+	font-size: 1.25em;
+	transition: background-color 300ms ease-in;
+}
+
+#menu a:hover {
+	/*background-color:  #f277f0;*/
+}
+
+
+#write-post {
+	font-size: 1.5rem;
+	width: 100%;
+	padding: 0.25em;
+	resize: none;
+}
+
+#submit-post {
+	font-size: 1.5rem;
+	width: 100%;
+<<<<<<< HEAD
+	color: white;
+=======
+	/*color: white;*/
+>>>>>>> aea8014e01dc360ca4f4803e9f8c8b9222fdb6c3
+	/*background-color: #05ea99;*/
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+}
+
+.post {
+	margin: 1em 0;
+}
+
+.post-text {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.post-info {
+	/*color: darkblue;*/
+}
+
+.author {
+	font-weight: bold;
+}
+
+.date {
+	/*color: white;*/
+}
+
+/* adaptive */
+@media (max-width: 400px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+	body {
+		font-size: 20px;
+	}
+}
+
+/* responsive */
+#title {
+	font-size: 3vw;
+}
+
+<<<<<<< HEAD
+.post-text { 
+	font-size: 3vmax;
+}
+
+.post-info {
+	font-size: 2vmax;
+=======
+/* adaptive */
+@media (max-width: 400px) {
+	body {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	
+	.post-text {
+		font-size: 1.25em;
+	}
+}
+
+@media (max-width: 401px) and (min-width: 800px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+/* viewport sizing */
+#title h1 {
+	font-size: 5vw;
+>>>>>>> aea8014e01dc360ca4f4803e9f8c8b9222fdb6c3
+}
+
+.post-text {
+	font-size: 3vmax;
+}
+
+@media (max-width: 400px) {
+	#title h1 {
+		font-size: 8vw;
+	}
+	.post-text {
+		font-size: 3vmax;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

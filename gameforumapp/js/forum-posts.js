@@ -1,8 +1,14 @@
+const topic = location.search.split('=')[1];
+const postsDiv = document.getElementById('posts');
+const postRef = firebase.database().ref('posts').child(topic);
+
+postRef.on('child_added', function(snapshot) {
+	createPost(snapshot.val(), snapshot.key);
+});
+
+
 const postText = document.getElementById('write-post');
 const submitPost = document.getElementById('submit-post');
-
-const db = firebase.database();
-const ref = db.ref('posts');
 
 /* add a new post to the database */
 function addPost() {
@@ -12,7 +18,7 @@ function addPost() {
 		uid: firebase.auth().currentUser.uid,
 		displayName: firebase.auth().currentUser.displayName
 	};
-	const promise = ref.push(info);
+	const promise = postRef.push(info);
 	promise.then(function() { 
 		// indicate post went through
 		postText.value = '';
@@ -27,3 +33,10 @@ postText.addEventListener('keydown', function(event) {
 		addPost();	
 	}
 });
+
+
+
+
+
+
+

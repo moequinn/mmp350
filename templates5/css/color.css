@@ -1,0 +1,20 @@
+:root {
+	--main-color: #05ea99;
+	--second-color: #f277f0;
+}
+
+#title h1 {
+	color: var(--second-color);
+}
+
+#menu a {
+	color: var(--main-color);
+}
+
+#menu a:hover {
+	background-color: var(--second-color);
+}
+
+#submit-post {
+	background-color: var(--main-color);
+}

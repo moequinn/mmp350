@@ -1,10 +1,3 @@
-const postsDiv = document.getElementById('posts');
-const postRef = firebase.database().ref('posts');
-
-postRef.on('child_added', function(snapshot) {
-	createPost(snapshot.val(), snapshot.key);
-});
-
 function el(tag, clas) {
 	const element = document.createElement(tag);
 	element.classList.add(clas);
@@ -69,8 +62,12 @@ function createPost(post, id) {
 	likeButton.addEventListener('click', function() {
 		const uid = firebase.auth().currentUser.uid;
 		const likeRef = postRef.child(id).child('likes').child(uid);
-		if (post.likes[uid]) {
-			likeRef.remove();
+		if (post.likes) {
+			if (post.likes[uid]) {
+				likeRef.remove();
+			} else {
+				likeRef.set(true);
+			}
 		} else {
 			likeRef.set(true);
 		}
@@ -81,5 +78,3 @@ function createPost(post, id) {
 	postsDiv.insertBefore(postDiv, postsDiv.firstElementChild);
 //	postsDiv.appendChild(postDiv);
 }
-
-

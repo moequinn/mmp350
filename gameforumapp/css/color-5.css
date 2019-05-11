@@ -1,0 +1,26 @@
+/* 
+	color scheme 5
+	monochromatic color scheme
+*/
+:root {
+	--main-hue: 310;
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+		
+	--accent-one: hsl(var(--main-hue), 75%, 25%);
+	--accent-two: hsl(var(--main-hue), 25%, 75%);
+}
+
+#title, #profile-display-name {
+	color: var(--main-color);
+}
+	
+.post {
+	color: var(--main-color);
+	border: 2px solid var(--accent-two);
+	padding: 1em;
+}
+	
+.author, .date {
+	color: var(--accent-one);
+}
+	
