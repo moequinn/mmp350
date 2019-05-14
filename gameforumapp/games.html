@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
 <head>
-	<title>User</title>
+	<title>Game Forum App</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
 	<script>
 	  // Initialize Firebase
 	  var config = {
@@ -47,13 +48,6 @@
 			<input type="text" id="sign-up-username" placeholder="Username">
 			<input type="email" id="sign-up-email" placeholder="Email">
 			<input type="password" id="sign-up-password" placeholder="Password">
-			<select id="borough">
-				<option>Bronx</option>
-				<option>Brooklyn</option>
-				<option>Manhattan</option>
-				<option>Queens</option>
-				<option>Staten Island</option>
-			</select>
 			<button id="submit-sign-up">Sign Up</button>
 			<!--<p id="signup-response"></p>-->
 		</div>
@@ -63,42 +57,19 @@
 			<ul id="menu-list">
 				<li><a href="index.html">Home</a></li>
 				<li><a id="profile-link" href="">Profile</a></li>
-				<li><a id="create.html">Create Topic</a></li>
+				<li><a href="create.html">Create Topic</a></li>
+                <li><a href="games.html">Games</a></li>
 			</ul>
 		</div>
 		
-		<div id="profile">
-			<h1 id="profile-display-name"></h1>
-            
-            <div id="bio-display"></div>
-            
-			<div id="profile-photo">
-				<img id="profile-img">
-			</div>
-			<div id="add-photo">
-				<input type="file" id="photo-input" accept="image/jpeg, image/png, image/gif, .pdf">
-				<button id="submit-photo">Upload Photo</button>
-			</div>
-			
-			<div id="edit-profile">
-				<input id="edit-display-name" placeholder="Edit profile name">
-                <input id="edit-display-bio" placeholder="Edit profile bio">
-				<button id="update-profile-button">Update</button>
-			</div>
-			<button id="edit">Edit</button>
-            
-            
-		</div>
+
+	
+		<!-- feed/posts/users content -->
+		<div id="posts"></div>
 	</div>
 	<script src="js/auth.js"></script>
-	<script src="js/profile.js"></script>
+	<script src="js/create-post.js"></script>
+	<script src="js/posts.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
 
