@@ -15,16 +15,12 @@ firebase.auth().onAuthStateChanged(function(user) {
 ref.on('value', updateUser);
 
 const profileDisplayName = document.getElementById('profile-display-name');
-const bioDisplay = document.getElementById('bio-display');
 
 function updateUser(snapshot) {	
 	const user = snapshot.val();
 	if (user.photo) {
 		displayPhoto(user.photo);	
 	}
-    if (user.bio) {
-        bioDisplay.textContent = user.bio;
-    }
 	profileDisplayName.textContent = user.displayName;
 	profileNameInput.placeholder = user.displayName;
 }
@@ -33,8 +29,7 @@ function updateUser(snapshot) {
 const editButton = document.getElementById('edit');
 const editProfile = document.getElementById('edit-profile');
 const profileNameInput = document.getElementById('edit-display-name');
-const bioInput = document.getElementById('edit-display-bio');
-const profileEditButton = document.getElementById('update-profile-button');
+const profileEditButton = document.getElementById('submit-display-name');
 
 editButton.onclick = function() {
 	editProfile.style.display = 'block';
@@ -46,7 +41,6 @@ profileEditButton.onclick = updateProfile;
 
 function updateProfile() {
 	const username = profileNameInput.value;
-    const bio = bioInput.value;
 	if (username.length > 2) {
 		ref.update({ 
             displayName: username,
