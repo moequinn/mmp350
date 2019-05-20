@@ -27,6 +27,14 @@ input.error {
 	border-color: red;
 }
 
+#image {
+    
+}
+
+.images {
+    width: 100%;
+/*    height: 200px;*/
+}
 
 
 

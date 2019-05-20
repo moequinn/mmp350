@@ -4,19 +4,25 @@
 	margin-right: auto;
 	
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, max-content);
 	grid-gap: 1em;
 	
 	grid-template-areas:
-		"menu menu menu"
-		"header sign-up login"
-		"post post post"
-		"main main main";
+		"menu menu menu menu"
+		"header header sign-up login"
+        "image image image image"
+		"post post post post"
+		"main main main main"
+        ;
 }
 
 #title {
 	grid-area: header;
+}
+
+#image {
+	grid-area: image;
 }
 
 #menu {
