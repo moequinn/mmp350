@@ -1,3 +1,15 @@
+/*
+
+	this is used to generate HTML to display posts
+	used by the index.html posts section for all posts in database
+	also used by search.html to show subset of posts based on query
+	
+	createPost requires the post data from the database and the key value
+	
+	function el is helper function to make creating an HTML element easier
+
+*/
+
 function el(tag, clas) {
 	const element = document.createElement(tag);
 	element.classList.add(clas);

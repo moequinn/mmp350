@@ -1,3 +1,11 @@
+/*
+
+	gets content for user profile and logged in user can edit
+	update data section is for changing the user profile
+	profile photo is for adding a profile photo for the user
+
+*/
+
 // get the user id from the URL
 const uid = location.search.split('=')[1];
 const db = firebase.database();
@@ -42,10 +50,7 @@ profileEditButton.onclick = updateProfile;
 function updateProfile() {
 	const username = profileNameInput.value;
 	if (username.length > 2) {
-		ref.update({ 
-            displayName: username,
-            bio: bio,
-        });
+		ref.update({ displayName: username });
 		firebase.auth().currentUser.updateProfile({ displayName: username });
 		editProfile.style.display = 'none';
 		profileNameInput.classList.remove('error');

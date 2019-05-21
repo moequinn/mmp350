@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<title>Profile</title>
-	<link href="../style.css" rel="stylesheet" type="text/css">
+	<title>layout</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -12,7 +12,7 @@
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
 	<script>
 	  // Initialize Firebase
-	  var config = {
+	 var config = {
     	apiKey: "AIzaSyB4Hx98RLALZMdIlxsg0xtLVlGTlMJvMrI",
                 authDomain: "mmp-350-app-1eb97.firebaseapp.com",
                 databaseURL: "https://mmp-350-app-1eb97.firebaseio.com",
@@ -27,7 +27,7 @@
 	<div id="container">
 		<!-- title / logo -->
 		<div id="title">
-			<h1>Game Forum App</h1>
+			<h1>My App</h1>
 		</div>
 		
 		<!-- user info -->
@@ -48,6 +48,13 @@
 			<input type="text" id="sign-up-username" placeholder="Username">
 			<input type="email" id="sign-up-email" placeholder="Email">
 			<input type="password" id="sign-up-password" placeholder="Password">
+			<select id="borough">
+				<option>Bronx</option>
+				<option>Brooklyn</option>
+				<option>Manhattan</option>
+				<option>Queens</option>
+				<option>Staten Island</option>
+			</select>
 			<button id="submit-sign-up">Sign Up</button>
 			<!--<p id="signup-response"></p>-->
 		</div>
@@ -55,30 +62,46 @@
 		<!-- navigation / menu -->
 		<div id="menu">
 			<ul id="menu-list">
-				<li><a href="../index.html">Home</a></li>
-				<li><a id="profile-link" href="../templates/profile.html">Profile</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a id="profile-link" href="profile.html">Profile</a></li>
 				<li><a href="search.html">Search</a></li>
-				<li><a id="create.html" href="../templates/create.html">Create Topic</a></li>
-				<li><a href="../templates/forum.html">Forum</a></li>
-                <li><a href="../templates/user.html">Users</a></li>
+				<li><a id="create.html" href="create.html">Create Topic</a></li>
+				<li><a href="forum.html">Forum</a></li>
+                <li><a href="user.html">Users</a></li>
 			</ul>
 		</div>
-        
-         <div id="image">
-            <img src="../images/game5.jpeg" alt="Game" class="images">
-        </div>
 		
-		<!-- posting content -->
-		<div id="post">
-			<textarea id="write-post" placeholder="What's happening?"></textarea>
-			<button id="submit-post">Post</button>
+		
+		<!-- search -->
+		<div id="search">
+			<div class="search">
+				<input id="query">
+				<button id="submit-query">Search</button>
+			</div>
+
+			<div class="search">
+				<input id="tag-query">
+				<button id="submit-tag-query">Search tags</button>
+			</div>
 		</div>
+
+		<div id="image">
+            <img src="images/game1.jpg" alt="Game" class="images">
+        </div>
 	
 		<!-- feed/posts/users content -->
 		<div id="posts"></div>
 	</div>
-	<script src="../js/auth.js"></script>
-	<script src="../js/create-post.js"></script>
-	<script src="../js/forum-posts.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/create-post.js"></script>
+	<script src="js/search.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

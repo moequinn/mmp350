@@ -1,3 +1,15 @@
+/*
+	deals with all authentication events in the application
+	sign up is for creating new user
+	log in handles log in
+	auth state is whenever the auth state changes
+	- this happens when user logs in, signs up, or just refreshes page
+	- this displays user name and adds profile link, if user is in database and authenticated
+	log out handles log out
+	
+	each of these sections could be separated into separate files
+*/
+
 /* sign up */
 const signupButton = document.getElementById('submit-sign-up');
 const signupUsername = document.getElementById('sign-up-username');
@@ -63,6 +75,7 @@ const logoutButton = document.getElementById('logout');
 logoutButton.onclick = function() {
 	firebase.auth().signOut();
 };
+
 
 
 

@@ -27,7 +27,7 @@
 	<div id="container">
 		<!-- title / logo -->
 		<div id="title">
-			<h1>Game Forum App</h1>
+			<h1>My App</h1>
 		</div>
 		
 		<!-- user info -->
@@ -48,6 +48,13 @@
 			<input type="text" id="sign-up-username" placeholder="Username">
 			<input type="email" id="sign-up-email" placeholder="Email">
 			<input type="password" id="sign-up-password" placeholder="Password">
+			<select id="borough">
+				<option>Bronx</option>
+				<option>Brooklyn</option>
+				<option>Manhattan</option>
+				<option>Queens</option>
+				<option>Staten Island</option>
+			</select>
 			<button id="submit-sign-up">Sign Up</button>
 			<!--<p id="signup-response"></p>-->
 		</div>
@@ -56,15 +63,22 @@
 		<div id="menu">
 			<ul id="menu-list">
 				<li><a href="index.html">Home</a></li>
-				<li><a id="profile-link" href="templates/profile.html">Profile</a></li>
-				<li><a href="templates/search.html">Search</a></li>
-				<li><a id="create.html" href="templates/create.html">Create Topic</a></li>
-				<li><a href="templates/forum.html">Forum</a></li>
-                <li><a href="templates/user.html">Users</a></li>
+				<li><a id="profile-link" href="profile.html">Profile</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a id="create.html" href="create.html">Create Topic</a></li>
+				<li><a href="forum.html">Forum</a></li>
+                <li><a href="user.html">Users</a></li>
 			</ul>
 		</div>
-        
-        <div id="image">
+		
+		<!-- posting content -->
+		<div id="post">
+			<textarea id="write-post" placeholder="What's happening?"></textarea>
+			<input id="category" placeholder="Add category">
+			<button id="submit-post">Post</button>
+		</div>
+
+		<div id="image">
             <img src="images/game4.jpg" alt="Game" class="images">
         </div>
 	
@@ -72,6 +86,7 @@
 		<div id="posts"></div>
 	</div>
 	<script src="js/auth.js"></script>
+	<script src="js/post.js"></script>
 	<script src="js/create-post.js"></script>
 	<script src="js/posts.js"></script>
 </body>
